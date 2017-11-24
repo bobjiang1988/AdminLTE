@@ -78,6 +78,7 @@
   color: #ffffff;
   background: #1e282c;
 }
+.skin-red .sidebar-menu > li:hover > a,
 .skin-red .sidebar-menu > li.active > a {
   border-left-color: #dd4b39;
 }
