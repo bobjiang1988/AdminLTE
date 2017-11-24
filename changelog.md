@@ -27,7 +27,7 @@
 - Merge pull request #1242 from gauravmak/patch-1
 - Merge pull request #1264 from Strato/patch-1
 - Merge pull request #1286 from marcusportmann/master
-- Merge branch 'master' of https://github.com/bobjiang1988/AdminLTE
+- Merge branch 'master' of https://github.com/almasaeed2010/AdminLTE
 - add laravel implementation PR #1301
 - Merge pull request #1268 from eryshev/master
 - Happy New Years! <U+1F389>
@@ -86,7 +86,7 @@
 - Fix issue #427 by updating slimscroll
 - Fix isse #683
 - Fix issue #1091
-- Merge branch 'master' of https://github.com/bobjiang1988/AdminLTE
+- Merge branch 'master' of https://github.com/almasaeed2010/AdminLTE
 - Fix issue #995
 - Merge pull request #1094 from xvonabur/patch-2
 - Merge pull request #1006 from Jerome1337/fix-sidebar-label
@@ -95,11 +95,11 @@
 - Merge pull request #1003 from yu1ro/replace-year
 - Merge pull request #1015 from Fl0ux/master
 - Merge pull request #1029 from angelitomg/master
-- Merge branch 'master' of https://github.com/bobjiang1988/AdminLTE
+- Merge branch 'master' of https://github.com/almasaeed2010/AdminLTE
 - Merge pull request #1089 from almasaeed2010/revert-1084-master
-- Merge branch 'master' of https://github.com/bobjiang1988/AdminLTE
+- Merge branch 'master' of https://github.com/almasaeed2010/AdminLTE
 - Merge pull request #1084 from blz-ea/master
-- Merge branch 'master' of https://github.com/bobjiang1988/AdminLTE
+- Merge branch 'master' of https://github.com/almasaeed2010/AdminLTE
 - Update ChartJS to 1.1.1
 - Merge pull request #1061 from freedayko/update-select2
 - Update Readme
@@ -141,7 +141,7 @@
 - Update README.md
 - Formatting fix
 - Add datepicker plugin to examples
-- Merge remote-tracking branch 'refs/remotes/bobjiang1988/master'
+- Merge remote-tracking branch 'refs/remotes/almasaeed2010/master'
 - Update License
 - Improve click event handler
 - Merge pull request #877 from suvjunmd/jQuery
