@@ -1,5 +1,5 @@
 {
-  "name": "almasaeed2010/adminlte",
+  "name": "bobjiang1988/adminlte",
   "description": "AdminLTE - admin control panel and dashboard that's based on Bootstrap 3",
   "homepage": "https://adminlte.io/",
   "type": "template",
@@ -22,7 +22,7 @@
   ],
   "license": "MIT",
   "support": {
-    "issues": "https://github.com/almasaeed2010/AdminLTE/issues"
+    "issues": "https://github.com/bobjiang1988/AdminLTE/issues"
   },
   "require": {
     "composer/installers": "1.*"
