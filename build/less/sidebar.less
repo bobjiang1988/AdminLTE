@@ -7,7 +7,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  padding-top: 50px;
+  padding-top: (@navbar-padding-vertical * 2) + 20px;//bob-ori: 50px;
   min-height: 100%;
   width: @sidebar-width;
   z-index: 810;
@@ -17,7 +17,7 @@
   .transition-transform(@transition-rule);
 
   @media (max-width: @screen-header-collapse) {
-    padding-top: 100px;
+    padding-top:  (@navbar-padding-vertical * 4) + 40px; // bob-ori: 100px;
   }
 
   @media (max-width: @screen-xs-max) {
@@ -94,7 +94,7 @@
     margin: 0;
     padding: 0;
     > a {
-      padding: 12px 5px 12px 15px;
+      padding: ceil((@scale-base * 12)) ceil((@scale-base * 5)) ceil((@scale-base * 12)) ceil((@scale-base * 15));
       display: block;
       > .fa,
       > .glyphicon,
@@ -111,7 +111,7 @@
     }
   }
   li.header {
-    padding: 10px 25px 10px 15px;
+    padding: ceil((@scale-base * 10)) ceil((@scale-base * 25)) ceil((@scale-base * 10)) ceil((@scale-base * 15));
     font-size: 12px;
   }
   li > a > .fa-angle-left,

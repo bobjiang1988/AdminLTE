@@ -4,7 +4,10 @@
 // PATHS
 // --------------------------------------------------------
 
+@import (reference) "../../../../../common/bower-asset/bootstrap/less/mixins";
+@import (reference) "../../../../../common/bower-asset/bootstrap/less/variables";
 @boxed-layout-bg-image-path: "../img/boxed-bg.jpg";
+// @scale-base: 0.75px;
 
 // COLORS
 // --------------------------------------------------------
@@ -82,7 +85,7 @@
 @box-border-radius: 3px;
 @box-footer-bg: #fff;
 @box-boxshadow: 0 1px 1px rgba(0, 0, 0, .1);
-@box-padding: 10px;
+@box-padding: ceil((@scale-base * 10));
 
 // Box variants
 @box-default-border-top-color: #d2d6de;
