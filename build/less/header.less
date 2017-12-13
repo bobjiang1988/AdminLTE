@@ -63,6 +63,10 @@
       }
     }
   }
+  // bob added
+  .navbar-custom-menu {
+    font-size: @font-size-middle;
+  }
   //Navbar toggle button
   .sidebar-toggle {
     float: left;
@@ -71,6 +75,8 @@
     padding: @navbar-padding-vertical @navbar-padding-horizontal;
     //Add the fontawesome bars icon
     font-family: fontAwesome;
+    font-size: @font-size-middle;
+    line-height: @line-height-computed;
     &:before {
       content: "\f0c9";
     }
@@ -138,7 +144,7 @@
 // Content Header
 .content-header {
   position: relative;
-  padding: ceil((@scale-base * 15)) ceil((@scale-base * 15)) 0 ceil((@scale-base * 15));
+  // padding: ceil((@scale-base * 15)) ceil((@scale-base * 15)) 0 ceil((@scale-base * 15));
   // Header Text
   > h1 {
     margin: 0;
@@ -211,9 +217,9 @@
   }
 
   .navbar-custom-menu .navbar-nav > li > a {
-    padding-top: ceil((@scale-lg * 15));
-    padding-bottom: ceil((@scale-lg * 15));
-    line-height: 15px; // bob-ori: 20;
+    padding-top: @navbar-padding-vertical;
+    padding-bottom: @navbar-padding-vertical;
+    line-height: @line-height-computed; // bob-ori: 20;
   }
 }
 

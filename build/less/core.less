@@ -11,10 +11,11 @@ body {
 }
 
 body {
-  font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: @font-family-base; // bob-ori: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 400;
   overflow-x: hidden;
   overflow-y: auto;
+  background: @content-bg;
 }
 
 /* Layout */
@@ -40,8 +41,9 @@ body {
 /*
  * Content Wrapper - contains the main content
  */
-.content-wrapper,
-.main-footer {
+.content-wrapper 
+//, .main-footer 
+{
   // Using disposable variable to join statements with a comma
   @transition-rule: @transition-speed @transition-fn,
   margin @transition-speed @transition-fn;
@@ -72,13 +74,16 @@ body {
 .content-wrapper  {
   // min-height: 100%;
   overflow: auto;
-  background-color: @content-bg;
+  // background-color: @content-bg;
   z-index: 800;
 }
 
 .main-footer {
-  background: #fff;
-  padding: 15px;
+  background: rgb(242, 242, 242);
+  padding: (@panel-footer-height - @line-height-computed) / 2;
+  height: @panel-footer-height;
+  line-height: @line-height-computed;
+  white-space: nowrap;
   color: #444;
   border-top: 1px solid @gray-lte;
 }
@@ -152,7 +157,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: @headings-font-family; // bob-ori: 'Source Sans Pro', sans-serif;
 }
 
 /* General Links */
