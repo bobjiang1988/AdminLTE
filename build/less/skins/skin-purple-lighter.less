@@ -9,7 +9,9 @@
             @media (min-width: @screen-header-collapse) {
                 .sidebar-toggle {
                     @sidebar-toggle-size: 30px;
-                    @sidebar-toggle-spacer: (@navbar-height - @sidebar-toggle-size)/2;
+                    @sidebar-toggle-spacer: (
+                            @navbar-height - @sidebar-toggle-size
+                        )/2;
                     color: #fff;
                     margin: @sidebar-toggle-spacer 0 @sidebar-toggle-spacer -0.5*@sidebar-toggle-size;
                     border: 2px solid #fff;
@@ -23,7 +25,10 @@
                     background-color: @purple-lighter;
                     &:hover {
                         color: #fff !important;
-                        background-color: darken(@purple-lighter, 5%) !important;
+                        background-color: darken(
+                            @purple-lighter,
+                            5%
+                        ) !important;
                     }
                 }
             }
@@ -41,6 +46,9 @@
                             }
                         }
                     }
+                }
+                .sidebar-toggle {
+                    .rotate(180deg);
                 }
             }
         }
@@ -62,10 +70,9 @@
     //Create the sidebar skin
     // .skin-dark-sidebar(@purple-lighter);
     .skin-purple-sidebar(@purple-sidebar, @purple-link-hover);
-  
 
     //Sidebar Menu. First level links
-    .sidebar-menu  >li {
+    .sidebar-menu > li {
         &:hover > a,
         &.active > a {
             background: rgba(255, 255, 255, 0.3);
@@ -82,6 +89,12 @@
         &:nth-child(4):hover > a,
         &:nth-child(4).active > a {
             border-left-color: @purple-link-hover-4;
+        }
+    }
+
+    @media (max-width: @screen-header-collapse) {
+        &.sidebar-open .sidebar-toggle {
+            .rotate(0) !important;
         }
     }
 }

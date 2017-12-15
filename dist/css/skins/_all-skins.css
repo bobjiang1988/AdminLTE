@@ -1837,6 +1837,12 @@
   .skin-purple-lighter .main-header .navbar .dropdown-menu li a:hover {
     background: #4f52ba;
   }
+  .skin-purple-lighter .main-header .navbar .sidebar-toggle {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
 }
 .skin-purple-lighter .main-header .logo {
   background-color: #6164c1;
@@ -1866,7 +1872,7 @@
   padding: 15px 5px 15px 14px;
 }
 .skin-purple-lighter .sidebar-menu > li > .treeview-menu > li > a {
-  padding: 15px 5px 15px 56px;
+  padding: 10px 5px 10px 56px;
 }
 .skin-purple-lighter .sidebar-menu > li > .treeview-menu > li.treeview > a:before {
   position: absolute;
@@ -1888,14 +1894,14 @@
   background: rgba(255, 255, 255, 0.2);
 }
 .skin-purple-lighter .sidebar-menu > li > .treeview-menu > li > .treeview-menu > li > a {
-  padding: 15px 5px 15px 70px;
+  padding: 6px 5px 6px 70px;
 }
 .skin-purple-lighter .sidebar-menu > li > .treeview-menu > li > .treeview-menu > li:hover > a:before,
 .skin-purple-lighter .sidebar-menu > li > .treeview-menu > li > .treeview-menu > li.active > a:before {
   position: absolute;
   left: 42px;
-  font-family: fontAwesome;
-  content: "\f00c";
+  font-family: iconfont;
+  content: "\e645";
 }
 .skin-purple-lighter .sidebar a {
   color: #fff;
@@ -1919,4 +1925,12 @@
 .skin-purple-lighter .sidebar-menu > li:nth-child(4):hover > a,
 .skin-purple-lighter .sidebar-menu > li:nth-child(4).active > a {
   border-left-color: #ea6a1d;
+}
+@media (max-width: 767px) {
+  .skin-purple-lighter.sidebar-open .sidebar-toggle {
+    -webkit-transform: rotate(0) !important;
+    -ms-transform: rotate(0) !important;
+    -o-transform: rotate(0) !important;
+    transform: rotate(0) !important;
+  }
 }
