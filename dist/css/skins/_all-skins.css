@@ -1831,10 +1831,8 @@
   .skin-purple-lighter .main-header .navbar .dropdown-menu li.divider {
     background-color: rgba(255, 255, 255, 0.1);
   }
-  .skin-purple-lighter .main-header .navbar .dropdown-menu li a {
-    color: #fff;
-  }
   .skin-purple-lighter .main-header .navbar .dropdown-menu li a:hover {
+    color: #fff;
     background: #4f52ba;
   }
   .skin-purple-lighter .main-header .navbar .sidebar-toggle {

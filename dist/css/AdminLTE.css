@@ -257,6 +257,22 @@ a:focus {
 .main-header .navbar-custom-menu {
   font-size: 14px;
 }
+.main-header .navbar-custom-menu .nav-group,
+.main-header .navbar-custom-menu .nav-group-end {
+  padding-right: 10px;
+}
+.main-header .navbar-custom-menu .nav-group > a,
+.main-header .navbar-custom-menu .nav-group-end > a {
+  height: 50px;
+}
+.main-header .navbar-custom-menu .nav-group .iconfont,
+.main-header .navbar-custom-menu .nav-group-end .iconfont {
+  font-size: 20px;
+  color: #c4c4c4;
+}
+.main-header .navbar-custom-menu .nav-group-end {
+  border-right: 1px solid #e6e6e6;
+}
 .main-header .sidebar-toggle {
   float: left;
   background-color: transparent;
@@ -290,11 +306,12 @@ a:focus {
 .main-header .navbar .nav > li > a > .label {
   position: absolute;
   top: 9px;
-  right: 7px;
+  right: 0;
   text-align: center;
   font-size: 9px;
   padding: 2px 3px;
   line-height: 0.9;
+  border-radius: 20px;
 }
 .main-header .logo {
   -webkit-transition: width 0.3s ease-in-out;
@@ -410,6 +427,10 @@ a:focus {
   }
   .main-header .navbar-custom-menu {
     float: right;
+  }
+  .main-header .navbar-custom-menu .nav-group,
+  .main-header .navbar-custom-menu .nav-group-end {
+    padding-right: 0;
   }
 }
 @media (max-width: 991px) {
