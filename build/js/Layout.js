@@ -94,7 +94,11 @@
 
     // Set the min-height of the content and sidebar based on
     // the height of the document.
-    if ($('body').hasClass(ClassName.fixed)) {
+    // 直接取消其他计算方式
+    if (1){
+      $(Selector.contentWrapper).css('height', windowHeight - neg)
+    }
+    else if ($('body').hasClass(ClassName.fixed)) {
       $(Selector.contentWrapper).css('height', windowHeight - footerHeight)
     } else {
       var postSetHeight

@@ -329,8 +329,10 @@
   }
   //Sidebar Menu. First level links
   .sidebar-menu  >li {
+    @base-a-padding: 14px;
     > a {
       border-left: 3px solid transparent;
+      padding: @spacer 5px @spacer @base-a-padding;
     }
     // &:hover > a,
     // &.active > a {
@@ -340,20 +342,40 @@
     //First Level Submenu
     > .treeview-menu {
       // margin: 0 1px;
-      background: @base-color;
+      // background: @base-color;
       // 第二级
       > li {
+        > a {
+          padding: @spacer 5px @spacer 4*@base-a-padding;
+        }
+        &.treeview {
+          > a:before {
+            position: absolute;
+            left: 2.5*@base-a-padding;
+            font-family: iconfont;
+            content: "\e613";
+            .transition(transform 0.5s ease);
+          }
+          &.menu-open > a:before{
+            .rotate(90deg);
+          }
+        }
+        
         &:hover > a,
         &.active > a {
           background: rgba(255, 255, 255, 0.2);
         }
         > .treeview-menu {
+          // background: rgba(255, 255, 255, 0.1);
           // 第三级
           > li {
+            > a {
+              padding: @spacer 5px @spacer 5*@base-a-padding;
+            }
             &:hover > a:before,
             &.active > a:before {
               position: absolute;
-              left: -10px;
+              left: 3*@base-a-padding;
               font-family: fontAwesome;
               content: "\f00c";
             }

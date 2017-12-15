@@ -9,6 +9,7 @@
     left: 0;
     padding-top: @navbar-height; //bob-ori: 50px;
     height: 100%;
+    overflow: auto;
     // height: calc(~'100% - @{panel-footer-height}');
     width: @sidebar-width;
     z-index: 810;
@@ -92,11 +93,12 @@
     //First Level
     > li {
         position: relative;
-        margin: @spacer 0;
-        padding: 0;
+        padding: @spacer 0;
+        border-bottom: 1px solid rgba(255,255,255,.3);
+        // padding: 0;
         > a {
             font-size: @font-size-middle;      
-            padding: @spacer 5px @spacer @spacer;
+            // padding: @spacer 5px @spacer @spacer;
             display: block;
             > .fa,
             > .glyphicon,
@@ -137,9 +139,10 @@
         > a > .pull-right-container > .fa-angle-left {
             .rotate(-90deg);
         }
-        // > .treeview-menu {
-        //     display: block;
-        // }
+        // 加上之后动画没了
+        > .treeview-menu {
+            display: block;
+        }
     }
     .active > .treeview-menu {
         display: block;

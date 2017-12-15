@@ -76,18 +76,37 @@
 }
 .skin-purple-lighter .sidebar-menu > li > a {
   border-left: 3px solid transparent;
+  padding: 15px 5px 15px 14px;
 }
-.skin-purple-lighter .sidebar-menu > li > .treeview-menu {
-  background: #4f52ba;
+.skin-purple-lighter .sidebar-menu > li > .treeview-menu > li > a {
+  padding: 15px 5px 15px 56px;
+}
+.skin-purple-lighter .sidebar-menu > li > .treeview-menu > li.treeview > a:before {
+  position: absolute;
+  left: 35px;
+  font-family: iconfont;
+  content: "\e613";
+  -webkit-transition: transform 0.5s ease;
+  -o-transition: transform 0.5s ease;
+  transition: transform 0.5s ease;
+}
+.skin-purple-lighter .sidebar-menu > li > .treeview-menu > li.treeview.menu-open > a:before {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 .skin-purple-lighter .sidebar-menu > li > .treeview-menu > li:hover > a,
 .skin-purple-lighter .sidebar-menu > li > .treeview-menu > li.active > a {
   background: rgba(255, 255, 255, 0.2);
 }
+.skin-purple-lighter .sidebar-menu > li > .treeview-menu > li > .treeview-menu > li > a {
+  padding: 15px 5px 15px 70px;
+}
 .skin-purple-lighter .sidebar-menu > li > .treeview-menu > li > .treeview-menu > li:hover > a:before,
 .skin-purple-lighter .sidebar-menu > li > .treeview-menu > li > .treeview-menu > li.active > a:before {
   position: absolute;
-  left: -10px;
+  left: 42px;
   font-family: fontAwesome;
   content: "\f00c";
 }
@@ -98,7 +117,7 @@
   text-decoration: none;
 }
 .skin-purple-lighter .sidebar-menu > li:hover > a,
-.skin-purple-lighter .sidebar-menu > li:active > a {
+.skin-purple-lighter .sidebar-menu > li.active > a {
   background: rgba(255, 255, 255, 0.3);
   border-left-color: #1dc7ea;
 }
