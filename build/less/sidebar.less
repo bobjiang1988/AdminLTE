@@ -8,20 +8,17 @@
     top: 0;
     left: 0;
     padding-top: @navbar-height; //bob-ori: 50px;
-    // padding-bottom: @panel-footer-height;
-    // padding: @navbar-height @spacer 0 @spacer;
-    height: calc(~'100% - @{panel-footer-height}');
+    height: 100%;
+    // height: calc(~'100% - @{panel-footer-height}');
     width: @sidebar-width;
-    border-right: 1px solid @gray-lighter;
     z-index: 810;
-    background: @brand-pure;
     // Using disposable variable to join statements with a comma
     @transition-rule: @transition-speed @transition-fn,
         width @transition-speed @transition-fn;
     .transition-transform(@transition-rule);
 
     @media (max-width: @screen-header-collapse) {
-        padding-top: (@navbar-padding-vertical * 4) + 40px; // bob-ori: 100px;
+        padding-top: @navbar-height * 2; // bob-ori: 100px;
     }
 
     @media (max-width: @screen-xs-max) {
@@ -92,32 +89,19 @@
     list-style: none;
     margin: 0;
     padding: 0;
-    // background: @brand-pure;
     //First Level
     > li {
         position: relative;
-        margin: 0;
+        margin: @spacer 0;
         padding: 0;
-        background: @brand-pure;
-        // bob added;
         > a {
-            font-size: @font-size-middle;
-            text-align: center;
-            color: @gray-light;
-            background-color: @brand-pure;
-            // padding: ceil((@scale-base * 12)) ceil((@scale-base * 5)) ceil((@scale-base * 12)) ceil((@scale-base * 15));
-            padding: 12px 0;
-            margin: 0 @spacer;
-            border-bottom: 4px solid @gray-lighter;
+            font-size: @font-size-middle;      
+            padding: @spacer 5px @spacer @spacer;
             display: block;
-            .pull-right-container {
-                display: none;
-            }
             > .fa,
             > .glyphicon,
             > .ion {
                 width: 20px;
-                display: none;
             }
         }
         .label,
@@ -153,20 +137,11 @@
         > a > .pull-right-container > .fa-angle-left {
             .rotate(-90deg);
         }
+        // > .treeview-menu {
+        //     display: block;
+        // }
     }
     .active > .treeview-menu {
         display: block;
-    }
-    .treeview-menu {
-      font-size: @font-size-base;
-    }
-    li {
-      a:hover,
-      &.active a {
-        color: @brand-primary;
-      }
-      a {
-        color: @text-color;
-      }
     }
 }

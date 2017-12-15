@@ -311,3 +311,104 @@
     }
   }
 }
+
+// Purple Sidebar Mixin
+.skin-purple-sidebar(@base-color, @link-hover-border-color) {
+
+  // Sidebar background color (Both .wrapper and .left-side are responsible for sidebar bg color)
+  .wrapper,
+  .main-sidebar,
+  .left-side {
+    background-color: @base-color;
+  }
+  //User Panel (resides in the sidebar)
+  .user-panel {
+    > .info, > .info > a {
+      color: #fff;
+    }
+  }
+  //Sidebar Menu. First level links
+  .sidebar-menu  >li {
+    > a {
+      border-left: 3px solid transparent;
+    }
+    // &:hover > a,
+    // &.active > a {
+    //   border-left-color: @link-hover-border-color;
+    //   background: rgba(255, 255, 255, 0.3);
+    // }
+    //First Level Submenu
+    > .treeview-menu {
+      // margin: 0 1px;
+      background: @base-color;
+      // 第二级
+      > li {
+        &:hover > a,
+        &.active > a {
+          background: rgba(255, 255, 255, 0.2);
+        }
+        > .treeview-menu {
+          // 第三级
+          > li {
+            &:hover > a:before,
+            &.active > a:before {
+              position: absolute;
+              left: -10px;
+              font-family: fontAwesome;
+              content: "\f00c";
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //All links within the sidebar menu
+  .sidebar a {
+    color: #fff;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  //All submenus
+  // .sidebar-menu .treeview-menu {
+    // > li {
+      // > a {
+      //   color: @sidebar-dark-submenu-color;
+      // }
+      // &.active > a, > a:hover {
+      //   color: @sidebar-dark-submenu-hover-color;
+      // }
+    // }
+  // }
+  //The sidebar search form
+  // .sidebar-form {
+  //   .border-radius(3px);
+  //   border: 1px solid lighten(@sidebar-dark-bg, 10%);
+  //   margin: 10px 10px;
+  //   input[type="text"], .btn {
+  //     box-shadow: none;
+  //     background-color: lighten(@sidebar-dark-bg, 10%);
+  //     border: 1px solid transparent;
+  //     height: 35px;
+  //     //.transition(all @transition-speed @transition-fn);
+  //   }
+  //   input[type="text"] {
+  //     color: #666;
+  //     .border-radius(2px, 0, 2px, 0);
+  //     &:focus,
+  //     &:focus + .input-group-btn .btn {
+  //       background-color: #fff;
+  //       color: #666;
+  //     }
+  //     &:focus + .input-group-btn .btn {
+  //       border-left-color: #fff;
+
+  //     }
+  //   }
+  //   .btn {
+  //     color: #999;
+  //     .border-radius(0, 2px, 0, 2px);
+  //   }
+  // }
+}
