@@ -22,7 +22,7 @@ body {
   font-weight: 400;
   overflow-x: hidden;
   overflow-y: auto;
-  background: #ecf0f5;
+  background: #f7f7f8;
 }
 /* Layout */
 .wrapper {
@@ -88,7 +88,7 @@ body {
 }
 .content-wrapper {
   overflow: auto;
-  background-color: #ecf0f5;
+  background-color: #f7f7f8;
   z-index: 800;
 }
 .main-footer {
