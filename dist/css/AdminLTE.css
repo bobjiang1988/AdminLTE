@@ -146,6 +146,7 @@ body {
 .content {
   overflow: auto;
   min-height: 250px;
+  font-size: 12px;
 }
 .inner-content {
   padding: 15px;
