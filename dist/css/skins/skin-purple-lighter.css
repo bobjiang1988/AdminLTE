@@ -2,7 +2,7 @@
   background-color: #ffffff;
 }
 .skin-purple-lighter .main-header .navbar .nav > li > a {
-  color: #333333;
+  color: #505050;
 }
 .skin-purple-lighter .main-header .navbar .nav > li > a:hover,
 .skin-purple-lighter .main-header .navbar .nav > li > a:active,
@@ -12,13 +12,13 @@
 .skin-purple-lighter .main-header .navbar .nav .open > a:focus,
 .skin-purple-lighter .main-header .navbar .nav > .active > a {
   background: rgba(0, 0, 0, 0.1);
-  color: #3c8dbc;
+  color: #1dc7ea;
 }
 .skin-purple-lighter .main-header .navbar .sidebar-toggle {
-  color: #333333;
+  color: #505050;
 }
 .skin-purple-lighter .main-header .navbar .sidebar-toggle:hover {
-  color: #3c8dbc;
+  color: #1dc7ea;
   background: rgba(0, 0, 0, 0.1);
 }
 @media (min-width: 767px) {
