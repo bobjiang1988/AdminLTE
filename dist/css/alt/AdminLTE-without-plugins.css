@@ -261,7 +261,7 @@ a:focus {
 }
 .main-header .navbar-custom-menu .nav-group,
 .main-header .navbar-custom-menu .nav-group-end {
-  padding-right: 10px;
+  padding-right: 10px !important;
 }
 .main-header .navbar-custom-menu .nav-group > a,
 .main-header .navbar-custom-menu .nav-group-end > a {
@@ -1270,7 +1270,6 @@ a:focus {
   }
   .navbar-custom-menu > .navbar-nav > li > .dropdown-menu {
     position: absolute;
-    right: 5%;
     left: auto;
     border: 1px solid #ddd;
     background: #fff;
