@@ -114,6 +114,19 @@
   font-family: iconfont;
   content: "\e645";
 }
+.skin-purple-lighter .sidebar-menu > li > .treeview-menu > li > .treeview-menu > li > .treeview-menu {
+  padding-left: 84px;
+}
+.skin-purple-lighter .sidebar-menu > li > .treeview-menu > li > .treeview-menu > li > .treeview-menu > li:hover > a:before,
+.skin-purple-lighter .sidebar-menu > li > .treeview-menu > li > .treeview-menu > li > .treeview-menu > li.active > a:before {
+  position: absolute;
+  left: -21px;
+  top: 5px;
+  font-family: iconfont;
+  content: "\e777";
+  font-size: 14px;
+  line-height: 1;
+}
 .skin-purple-lighter .sidebar a {
   color: #fff;
 }

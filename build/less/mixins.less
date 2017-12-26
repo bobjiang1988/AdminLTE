@@ -379,6 +379,23 @@
               font-family: iconfont;
               content: "\e645";
             }
+
+            >.treeview-menu{
+              padding-left: 6*@base-a-padding;
+              // 第四级
+              > li {
+                &:hover > a:before,
+                &.active > a:before {
+                  position: absolute;
+                  left: -1.5*@base-a-padding;
+                  top: 5px;
+                  font-family: iconfont;
+                  content: "\e777";
+                  font-size: @font-size-middle;
+                  line-height: 1;
+                }
+              }
+            }
           }
         }
       }
