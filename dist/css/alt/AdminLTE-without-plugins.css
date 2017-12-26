@@ -667,6 +667,9 @@ a:focus {
   width: 210px;
   left: 50px;
   background: #4f52ba;
+  max-height: 350px;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 .sidebar-mini:not(.sidebar-mini-expand-feature).sidebar-collapse .sidebar-menu > li:hover > a > span {
   top: 0;
