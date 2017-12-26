@@ -58,7 +58,7 @@ body {
   -moz-transition: -moz-transform 0.3s ease-in-out, margin 0.3s ease-in-out;
   -o-transition: -o-transform 0.3s ease-in-out, margin 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out, margin 0.3s ease-in-out;
-  margin-left: 230px;
+  margin-left: 260px;
   z-index: 820;
 }
 .layout-top-nav .content-wrapper,
@@ -81,10 +81,10 @@ body {
 @media (max-width: 767px) {
   .sidebar-open .content-wrapper,
   .sidebar-open .main-footer {
-    -webkit-transform: translate(230px, 0);
-    -ms-transform: translate(230px, 0);
-    -o-transform: translate(230px, 0);
-    transform: translate(230px, 0);
+    -webkit-transform: translate(260px, 0);
+    -ms-transform: translate(260px, 0);
+    -o-transform: translate(260px, 0);
+    transform: translate(260px, 0);
   }
 }
 .content-wrapper {
@@ -206,7 +206,7 @@ a:focus {
   -o-transition: margin-left 0.3s ease-in-out;
   transition: margin-left 0.3s ease-in-out;
   margin-bottom: 0;
-  margin-left: 230px;
+  margin-left: 260px;
   border: none;
   min-height: 50px;
   border-radius: 0;
@@ -324,7 +324,7 @@ a:focus {
   height: 50px;
   font-size: 20px;
   line-height: 50px;
-  width: 230px;
+  width: 260px;
   font-family: -apple-system, BlinkMacSystemFont, "Microsoft YaHei", "WenQuanYi Micro Hei", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
   padding: 0 15px;
   font-weight: 300;
@@ -457,7 +457,7 @@ a:focus {
   padding-top: 50px;
   height: 100%;
   overflow: auto;
-  width: 230px;
+  width: 260px;
   z-index: 810;
   -webkit-transition: -webkit-transform 0.3s ease-in-out, width 0.3s ease-in-out;
   -moz-transition: -moz-transform 0.3s ease-in-out, width 0.3s ease-in-out;
@@ -471,18 +471,18 @@ a:focus {
 }
 @media (max-width: 767px) {
   .main-sidebar {
-    -webkit-transform: translate(-230px, 0);
-    -ms-transform: translate(-230px, 0);
-    -o-transform: translate(-230px, 0);
-    transform: translate(-230px, 0);
+    -webkit-transform: translate(-260px, 0);
+    -ms-transform: translate(-260px, 0);
+    -o-transform: translate(-260px, 0);
+    transform: translate(-260px, 0);
   }
 }
 @media (min-width: 768px) {
   .sidebar-collapse .main-sidebar {
-    -webkit-transform: translate(-230px, 0);
-    -ms-transform: translate(-230px, 0);
-    -o-transform: translate(-230px, 0);
-    transform: translate(-230px, 0);
+    -webkit-transform: translate(-260px, 0);
+    -ms-transform: translate(-260px, 0);
+    -o-transform: translate(-260px, 0);
+    transform: translate(-260px, 0);
   }
 }
 @media (max-width: 767px) {
@@ -592,9 +592,6 @@ a:focus {
   -o-transform: rotate(-90deg);
   transform: rotate(-90deg);
 }
-.sidebar-menu .menu-open > .treeview-menu {
-  display: block;
-}
 .sidebar-menu .active > .treeview-menu {
   display: block;
 }
@@ -667,14 +664,14 @@ a:focus {
 .sidebar-mini:not(.sidebar-mini-expand-feature).sidebar-collapse .sidebar-menu > li:hover > .treeview-menu {
   display: block !important;
   position: absolute;
-  width: 180px;
+  width: 210px;
   left: 50px;
   background: #4f52ba;
 }
 .sidebar-mini:not(.sidebar-mini-expand-feature).sidebar-collapse .sidebar-menu > li:hover > a > span {
   top: 0;
   margin-left: -3px;
-  padding: 10px 5px 10px 20px;
+  padding: 15px 5px 15px 20px;
   background-color: #6164c1;
 }
 .sidebar-mini:not(.sidebar-mini-expand-feature).sidebar-collapse .sidebar-menu > li:hover > a > .pull-right-container {
@@ -729,8 +726,8 @@ a:focus {
 .control-sidebar-bg,
 .control-sidebar {
   top: 0;
-  right: -230px;
-  width: 230px;
+  right: -260px;
+  width: 260px;
   -webkit-transition: right 0.3s ease-in-out;
   -o-transition: right 0.3s ease-in-out;
   transition: right 0.3s ease-in-out;
@@ -760,7 +757,7 @@ a:focus {
   .control-sidebar-open .content-wrapper,
   .control-sidebar-open .main-footer,
   .control-sidebar-open .right-side {
-    margin-right: 230px;
+    margin-right: 260px;
   }
 }
 .fixed .control-sidebar {
