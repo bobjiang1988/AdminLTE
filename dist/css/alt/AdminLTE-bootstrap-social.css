@@ -8,7 +8,7 @@
  */
 .btn-social {
   position: relative;
-  padding-left: 39px;
+  padding-left: 32px;
   text-align: left;
   white-space: nowrap;
   overflow: hidden;
@@ -19,8 +19,8 @@
   left: 0;
   top: 0;
   bottom: 0;
-  width: 30px;
-  line-height: 32px;
+  width: 26px;
+  line-height: 28px;
   font-size: 1.6em;
   text-align: center;
   border-right: 1px solid rgba(0, 0, 0, 0.2);
@@ -51,13 +51,13 @@
 }
 .btn-social-icon {
   position: relative;
-  padding-left: 39px;
+  padding-left: 32px;
   text-align: left;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  height: 32px;
-  width: 32px;
+  height: 28px;
+  width: 28px;
   padding: 0;
 }
 .btn-social-icon > :first-child {
@@ -65,8 +65,8 @@
   left: 0;
   top: 0;
   bottom: 0;
-  width: 30px;
-  line-height: 32px;
+  width: 26px;
+  line-height: 28px;
   font-size: 1.6em;
   text-align: center;
   border-right: 1px solid rgba(0, 0, 0, 0.2);

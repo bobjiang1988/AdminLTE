@@ -113,6 +113,9 @@
 }
 .skin-blue-light .sidebar-form {
   border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -khtml-border-radius: 3px;
   border: 1px solid #d2d6de;
   margin: 10px 10px;
 }

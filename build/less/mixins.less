@@ -71,6 +71,9 @@
 //border radius creator
 .border-radius(@radius) {
   border-radius: @radius;
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  -khtml-border-radius: @radius;
 }
 
 //Different radius each side
@@ -332,7 +335,7 @@
     @base-a-padding: 14px;
     > a {
       border-left: 3px solid transparent;
-      padding: @spacer-lg 5px @spacer-lg @base-a-padding;
+      padding: @base-a-padding 5px @base-a-padding @base-a-padding;
     }
     // &:hover > a,
     // &.active > a {
@@ -346,7 +349,7 @@
       // 第二级
       > li {
         > a {
-          padding: 10px 5px 10px 4*@base-a-padding;
+          padding: @spacer-sm 5px @spacer-sm 4*@base-a-padding;
         }
         &.treeview {
           > a:before {
@@ -361,16 +364,18 @@
           }
         }
         
-        &:hover > a,
         &.active > a {
           background: rgba(255, 255, 255, 0.2);
+        }
+        &:not(.active):hover > a {
+            background: rgba(255, 255, 255, 0.1);
         }
         > .treeview-menu {
           // background: rgba(255, 255, 255, 0.1);
           // 第三级
           > li {
             > a {
-              padding: 6px 5px 6px 5*@base-a-padding;
+              padding: @spacer-sm 5px @spacer-sm 5*@base-a-padding;
             }
             &:hover > a:before,
             &.active > a:before {

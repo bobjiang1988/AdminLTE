@@ -3,7 +3,7 @@
  * ---------------
  */
 .form-control {
-  .border-radius(@input-radius);
+  .border-radius(@input-radius) !important;
   box-shadow: none;
   border-color: @gray-lte;
   &:focus {
@@ -17,11 +17,11 @@
     opacity: 1;
   }
 
-  &:not(select) {
+  // &:not(select) {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-  }
+  // }
 }
 
 .form-group {

@@ -73,22 +73,33 @@
 
     //Sidebar Menu. First level links
     .sidebar-menu > li {
-        &:hover > a,
+        // &:hover > a,
         &.active > a {
             background: rgba(255, 255, 255, 0.3);
             border-left-color: @purple-link-hover;
         }
-        &:nth-child(2):hover > a,
+        &:not(.active):hover > a {
+            background: rgba(255, 255, 255, 0.2);
+        }
+        // &:nth-child(2):hover > a,
         &:nth-child(2).active > a {
             border-left-color: @purple-link-hover-2;
         }
-        &:nth-child(3):hover > a,
+        // &:nth-child(3):hover > a,
         &:nth-child(3).active > a {
             border-left-color: @purple-link-hover-3;
         }
-        &:nth-child(4):hover > a,
+        // &:nth-child(4):hover > a,
         &:nth-child(4).active > a {
             border-left-color: @purple-link-hover-4;
+        }
+        // &:nth-child(5):hover > a,
+        &:nth-child(5).active > a {
+            border-left-color: @purple-link-hover-5;
+        }
+        // &:nth-child(6):hover > a,
+        &:nth-child(6).active > a {
+            border-left-color: @purple-link-hover-6;
         }
     }
 

@@ -19,8 +19,10 @@
   .select2-selection--single {
     border: 1px solid @gray-lte;
     border-radius: @input-radius;
-    padding: 6px 12px;
-    height: 34px;
+    // padding: 6px 12px;
+    // height: 34px;
+    height: @input-height-base; // Make inputs at least the height of their button counterpart (base line-height + padding + border)
+    padding: @padding-base-vertical @padding-base-horizontal;
   }
 }
 
@@ -39,7 +41,8 @@
 }
 
 .select2-results__option {
-  padding: 6px 12px;
+  padding: @padding-base-vertical @padding-base-horizontal;
+  // padding: 6px 12px;
   user-select: none;
   -webkit-user-select: none;
 }
@@ -48,7 +51,8 @@
   padding-left: 0;
   padding-right: 0;
   height: auto;
-  margin-top: -4px;
+  line-height: inherit !important;
+  // margin-top: -4px;
 }
 
 .select2-container[dir="rtl"] .select2-selection--single .select2-selection__rendered {
@@ -57,7 +61,8 @@
 }
 
 .select2-container--default .select2-selection--single .select2-selection__arrow {
-  height: 28px;
+  // height: 28px;
+  display: none;
   right: 3px;
 }
 
